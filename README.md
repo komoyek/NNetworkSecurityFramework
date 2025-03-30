@@ -84,9 +84,9 @@ Contact
 Pour toute question, suggestion ou collaboration, contactez-moi :  
 Nom : MOUMOUNI KOMOYE Harouna  
 
-Profil LinkedIn : linkedin.com/in/moumouni-komoye-harouna (Mettez votre vrai lien LinkedIn ici)  
+Profil LinkedIn : https://www.linkedin.com/in/harouna-moumouni-komoye-9a436aba/ (https://www.linkedin.com/in/harouna-moumouni-komoye-9a436aba/)  
 
-Email : moumouni.komoye@example.com (mailto:moumouni.komoye@example.com) (Remplacez par votre email)  
+Email : moumouni.komoye@example.com (mailto:komoyek@gmail.com) (komoyek@gmail.com)  
 
 GitHub Issues : Ouvrez une issue dans ce dépôt pour un support technique.
 
