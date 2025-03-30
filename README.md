@@ -42,7 +42,6 @@ Le code est organisé en 13 sections principales, couvrant tous les aspects de l
 13. **Fonction principale** - Orchestration globale  
     - Exécution des processus en parallèle et audits périodiques.
 
-Le pseudo-code complet est disponible dans le fichier [`network_security_pseudocode.txt`](./network_security_pseudocode.txt).
 
 ## Comment l’implémenter ?
 1. **Analyse des besoins** : Identifiez les spécificités de votre infrastructure (taille, criticité, ressources disponibles).
