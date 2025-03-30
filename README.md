@@ -95,3 +95,285 @@ MOUMOUNI KOMOYE Harouna
 Pentester | Passionné de cybersécurité
 Mars 2025
 
+ProgrammePrincipal()
+│
+├── 1. InitialiserInfrastructureSécurité()
+│   ├── 1.1 Inventaire et cartographie
+│   │   ├── CréerInventaireComplet()
+│   │   ├── CartographierTopologieRéseau()
+│   │   ├── IdentifierPointsEntrée()
+│   │   └── ClassifierActivités()
+│   ├── 1.2 Initialisation des composantes
+│   │   ├── DéfinirPérimètreSécurité()
+│   │   ├── ConfigurerSegmentationRéseau()
+│   │   ├── InitialiserSystèmesDetection()
+│   │   ├── ConfigurerPolitiquesAccès()
+│   │   ├── MettreEnPlaceChiffrement()
+│   │   └── ÉtablirJournalisation()
+│   └── 1.3 Documentation et références
+│       ├── CréerBaselineRéseau()
+│       ├── CréerProcéduresStandard()
+│       └── ÉtablirPlansSauvegarde()
+│
+├── 2. DéfinirPérimètreSécurité()
+│   ├── 2.1 Inventaire des connexions externes
+│   │   └── IdentifierToutesConnectionsExternes()
+│   ├── 2.2 Configuration des pare-feux
+│   │   ├── ConfigurerPareFeuxPérimètre()
+│   │   ├── RèglesParDéfaut: INTERDIRE_TOUT
+│   │   ├── RèglesEntrantes (ex. DMZ.ServeurWeb:443)
+│   │   └── RèglesSortantes (ex. RéseauInterne:80,443)
+│   ├── 2.3 Système de Prévention d'Intrusion (IPS)
+│   │   ├── ConfigurerIPS()
+│   │   ├── ActiverSignatures()
+│   │   ├── ConfigurerActionParDéfaut: BLOQUER
+│   │   ├── DéfinirSeuils()
+│   │   └── ActiverAnalyseProtocoles()
+│   ├── 2.4 Configuration de la DMZ
+│   │   ├── ConfigurerDMZ()
+│   │   ├── SegmenterServices()
+│   │   ├── ConfigurerHôteBastion()
+│   │   ├── DurcirOS()
+│   │   ├── InstallationAntivirusAvancé()
+│   │   └── LimiterPrivilèges()
+│   ├── 2.5 Protection DDoS
+│   │   ├── ConfigurerProtectionDDoS()
+│   │   ├── DéfinirBaseline()
+│   │   ├── ConfigurerSeuils()
+│   │   └── DéfinirActions()
+│   ├── 2.6 Accès distant sécurisé (VPN)
+│   │   ├── ConfigurerVPN()
+│   │   ├── ProtocoleSécurisé: OpenVPN
+│   │   ├── ConfigurerChiffrement()
+│   │   ├── ModeAuthentification: CERTIFICAT+MFA
+│   │   └── TunnelingSplit: FAUX
+│   └── 2.7 Authentification pour accès distant
+│       ├── ConfigurerAuthentificationMultifacteur()
+│       ├── Méthodes: ["App mobile", "SMS", "Clé matérielle"]
+│       ├── PolitiqueValidité: 8 heures
+│       └── ConfigurerFallback()
+│
+├── 3. ConfigurerSegmentationRéseau()
+│   ├── 3.1 Identification des zones
+│   │   ├── IdentifierZonesFonctionnelles()
+│   │   └── IdentifierRessourcesCritiques()
+│   ├── 3.2 Création des VLANs
+│   │   ├── CréerVLAN()
+│   │   ├── AssignerPlageIP()
+│   │   ├── ConfigurerDHCP()
+│   │   ├── AssignerRouteur()
+│   │   └── ConfigurerACLsVLAN()
+│   ├── 3.3 Micro-segmentation
+│   │   ├── ConfigurerMicroSegment()
+│   │   ├── ConfigurerPareFeuxInterne()
+│   │   └── AppliquerPolitiqueZéroConfiance()
+│   └── 3.4 Gestion des périphériques spéciaux
+│       ├── 3.4.1 Périphériques IoT
+│       │   ├── CréerVLANIoT()
+│       │   ├── IsolerComplètement()
+│       │   ├── LimiterAccèsInternet()
+│       │   └── ActiverInspectionProfonde()
+│       ├── 3.4.2 Périphériques BYOD
+│       │   ├── CréerVLANBYOD()
+│       │   ├── LimiterAccèsRessourcesInternes()
+│       │   ├── ForcerProxyWeb()
+│       │   └── AppliquerFiltrageContenu()
+│       └── 3.4.3 Périphériques non conformes
+│           ├── ConfigurerQuarantaine()
+│           └── IntégrerNAC()
+│
+├── 4. InitialiserSystèmesDetection()
+│   ├── 4.1 Système de Détection d'Intrusion (IDS)
+│   │   ├── ConfigurerIDS()
+│   │   ├── DéployerSondes()
+│   │   ├── ConfigurerSondesRéseau()
+│   │   ├── ConfigurerSondesHôtes()
+│   │   ├── ChargerSignatures()
+│   │   ├── ActiverDétectionComportementale()
+│   │   ├── DéfinirBaselinesComportement()
+│   │   └── ConfigurerFréquenceMisesÀJour()
+│   ├── 4.2 Gestion des informations (SIEM)
+│   │   ├── ConfigurerSIEM()
+│   │   ├── AjouterSource()
+│   │   ├── ConfigurerParseur()
+│   │   ├── CréerRègleCorrélation()
+│   │   ├── ConfigurerTableauxBord()
+│   │   └── ProgrammerRapports()
+│   ├── 4.3 Analyse des flux réseau (NBA/NDR)
+│   │   ├── ConfigurerAnalyseFluxRéseau()
+│   │   ├── ActiverProtocolesAnalysés()
+│   │   ├── CréerBaselinesParService()
+│   │   ├── ConfigurerAnalyseComportementaleUtilisateur()
+│   │   └── DéfinirSeuils()
+│   ├── 4.4 Détection d'anomalies avec IA/ML
+│   │   ├── ConfigurerDétectionAnomalies()
+│   │   ├── EntraînerModèles()
+│   │   ├── DéfinirComportementNormal()
+│   │   ├── ConfigurerAjustementDynamique()
+│   │   └── IntégrerSIEM()
+│   └── 4.5 Scans de vulnérabilités
+│       ├── ConfigurerScannerVulnérabilités()
+│       ├── DéfinirPortéeAnalyse()
+│       ├── ConfigurerCredentiels()
+│       ├── ProgrammerScansVulnérabilités()
+│       ├── IntégrerSIEM()
+│       └── ConfigurerRemédiation()
+│
+├── 5. ConfigurerPolitiquesAccès()
+│   ├── 5.1 Service d'annuaire et identités
+│   │   ├── ConfigurerDirectoireActif()
+│   │   ├── ConfigurerLDAP()
+│   │   └── ConfigurerFédérationIdentité()
+│   ├── 5.2 Contrôle d'accès basé sur les rôles (RBAC)
+│   │   ├── ConfigurerRBAC()
+│   │   ├── DéfinirRôle()
+│   │   ├── AssignerPrivilèges()
+│   │   ├── ActivationTemporaire()
+│   │   ├── SéparationDesTâches()
+│   │   └── RévisionPériodique()
+│   ├── 5.3 Authentification forte et adaptative
+│   │   ├── ConfigurerAuthentificationMultifacteur()
+│   │   ├── ConfigurerAuthentificationAdaptative()
+│   │   └── ConfigurerSSO()
+│   └── 5.4 Gestion des périphériques
+│       ├── DéployerMDM()
+│       └── ConfigurerNAC()
+│
+├── 6. MettreEnPlaceChiffrement()
+│   ├── 6.1 Chiffrement des communications
+│   │   ├── ConfigurerTLS_SSL()
+│   │   └── ConfigurerIPSec()
+│   ├── 6.2 Chiffrement des systèmes de stockage
+│   │   ├── ConfigurerChiffrementStockage()
+│   │   └── ConfigurerChiffrementAppareils()
+│   └── 6.3 Classification et protection des données
+│       ├── DéfinirClassificationDonnées()
+│       └── ConfigurerDLP()
+│
+├── 7. ÉtablirJournalisation()
+│   ├── 7.1 Configuration des sources
+│   │   ├── IdentifierSourcesJournalisation()
+│   │   └── ConfigurerJournalisation()
+│   ├── 7.2 Centralisation et analyse
+│   │   ├── ConfigurerServerCentralisationLogs()
+│   │   ├── ConfigurerTransmissionSécurisée()
+│   │   └── IntégrerSIEM()
+│   ├── 7.3 Système d'alerte
+│   │   ├── ConfigurerSystèmeAlerte()
+│   │   ├── DéfinirNiveauxGravité()
+│   │   ├── DéfinirCanauxNotification()
+│   │   └── ConfigurerEscalade()
+│   └── 7.4 Rapports de conformité
+│       ├── ConfigurerAuditCompliance()
+│       └── ProgrammerRapportsConformité()
+│
+├── 8. GérerMisesÀJour()
+│   ├── 8.1 Inventaire et classification
+│   │   ├── CréerInventairePériphériques()
+│   │   ├── ClassifierParCriticité()
+│   │   ├── DétecterAutomatiquement()
+│   │   └── SurveillerChangements()
+│   ├── 8.2 Gestion des vulnérabilités
+│   │   ├── ConfigurerSourcesVeille()
+│   │   ├── SurveillerBulletinsSécurité()
+│   │   └── ProcessusÉvaluationVulnérabilités()
+│   └── 8.3 Gestion des mises à jour
+│       ├── ConfigurerWSUS()
+│       ├── ConfigurerGestionPaquetsLinux()
+│       ├── ConfigurerGPOMisesÀJour()
+│       ├── ConfigurerJamf()
+│       ├── ConfigurerMDMMisesÀJour()
+│       └── ConfigurerGestionFirmware()
+│
+├── 9. GérerIncidentsSécurité()
+│   ├── 9.1 Configuration détection
+│   │   ├── ConfigurerDétectionIncidents()
+│   │   └── DéfinirCatégoriesIncidents()
+│   ├── 9.2 Procédures de réponse
+│   │   ├── DéfinirProcéduresRéponse()
+│   │   ├── DéfinirÉquipeRéponse()
+│   │   ├── CréerPlanCommunication()
+│   │   ├── ÉtablirChaîneEscalade()
+│   │   └── DéfinirCoordonnéesContactsExternes()
+│   ├── 9.3 Procédures par type d'incident
+│   │   ├── DéfinirProcédureConfinement()
+│   │   └── DéfinirProcédureRemédiation()
+│   └── 9.4 Analyse post-incident
+│       ├── DéfinirProcessusAnalysePostIncident()
+│       ├── ÉtapesAnalyse()
+│       ├── ÉtapesAmélioration()
+│       └── CréerFormulaireRetourExpérience()
+│
+├── 10. GérerUtilisateurs()
+│   ├── 10.1 Programme de formation
+│   │   ├── ProgrammerFormationSécurité()
+│   │   ├── DéfinirModulesFormation()
+│   │   ├── DéfinirMéthodes()
+│   │   ├── ConfigurerSuiviFormation()
+│   │   └── ProgrammerÉvaluationCompétences()
+│   ├── 10.2 Gestion des comptes
+│   │   ├── ConfigurerGestionCycleVieComptes()
+│   │   ├── DéfinirProcessusOnboarding()
+│   │   ├── ProgrammerRevueAccès()
+│   │   └── DéfinirProcessusOffboarding()
+│   └── 10.3 Sensibilisation
+│       ├── ProgrammerCampagnePhishing()
+│       └── ConfigurerCommunicationSécurité()
+│
+├── 11. SurveillanceEnTempsRéel()
+│   ├── 11.1 Initialisation
+│   │   ├── ConfigurerCentreOpérationsSécurité()
+│   │   ├── DéfinirNiveauxAstreinte()
+│   │   ├── ConfigurerRotationÉquipes()
+│   │   └── DéfinirProcéduresEscalade()
+│   └── 11.2 Boucle principale
+│       ├── CollecterÉvénementsSécurité()
+│       ├── EnrichirÉvénements()
+│       ├── ClassifierAlerte()
+│       ├── DéclencherProcédureUrgence()
+│       ├── VérifierConformitéPériphériques()
+│       ├── CollecterMétriquesSécurité()
+│       ├── AnalyserTendances()
+│       ├── ActualiserTableauBordSécurité()
+│       └── GénérerRapportPériodique()
+│
+├── 12. ConfigurerPlanContinuitéReprise()
+│   ├── 12.1 Analyse d'impact
+│   │   ├── RéaliserAnalyseImpact()
+│   │   ├── IdentifierProcessusCritiques()
+│   │   └── DéfinirRTO_RPO()
+│   ├── 12.2 Plan de continuité
+│   │   ├── ÉlaborerPlanContinuité()
+│   │   ├── ConfigurerRedondanceWAN()
+│   │   ├── ConfigurerLoadBalancing()
+│   │   ├── ConfigurerDNSRedondant()
+│   │   └── ConfigurerRéplicationDonnées()
+│   ├── 12.3 Plan de reprise
+│   │   ├── ÉlaborerPlanReprise()
+│   │   ├── ConfigurerSiteSecondaire()
+│   │   ├── ConfigurerInfrastructureCloud()
+│   │   └── DéfinirProcéduresBascule()
+│   └── 12.4 Tests réguliers
+│       └── PlanifierTestsReprise()
+│
+└── 13. ProgrammePrincipal()
+    ├── 13.1 Initialisation
+    │   └── InitialiserInfrastructureSécurité()
+    ├── 13.2 Exécution en parallèle
+    │   ├── GérerMisesÀJour()
+    │   ├── GérerUtilisateurs()
+    │   └── SurveillanceEnTempsRéel()
+    ├── 13.3 Processus périodiques
+    │   ├── Planifier(AuditCompletSécurité)
+    │   ├── Planifier(TestPénétrationExterne)
+    │   ├── Planifier(TestPénétrationInterne)
+    │   ├── Planifier(RévisePolitiqueSécurité)
+    │   ├── Planifier(RéviseArchitectureSécurité)
+    │   ├── Planifier(VeilleTechnologique)
+    │   └── Planifier(ÉvaluationNouvellesTechnologies)
+    ├── 13.4 Gestion documentation
+    │   ├── Planifier(MiseÀJourDocumentation)
+    │   └── Planifier(RevueDocumentation)
+    └── 13.5 Rapports à la direction
+        ├── Planifier(RapportDirectionSécurité)
+        └── Planifier(PrésentationComitéSécurité)
